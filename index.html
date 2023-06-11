@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <script src="https://harfeto.timefriend.net/vendor/jquery.js"></script>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://harfeto.timefriend.net/vendor/dom-to-image-master/dist/dom-to-image.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        now = new Date();
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.async = true;
+        script.type = 'text/javascript';
+        var script_address = 'https://cdn.yektanet.com/template/bnrs/yn_bnr.min.js';
+        script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
+        head.appendChild(script);
+    </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTHHRC2X2G"></script>-->
+    <!--    <script>-->
+    <!--        window.dataLayer = window.dataLayer || [];-->
+    <!--        function gtag(){dataLayer.push(arguments);}-->
+    <!--        gtag('js', new Date());-->
+    <!---->
+    <!--        gtag('config', 'G-YTHHRC2X2G');-->
+    <!--    </script>-->
+
+    <!--    <script src="https://harfeto.timefriend.net/js/push/main.js"></script>-->
+
+    <div id="pos-notification-7204"></div>
+
+
+
+    <title>چالش حرف ناشناس ( پیام ناشناس ) نمایش پیام</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="حرف های دل دوستات رو به صورت پیام ناشناس بگیر ، ربات حرفتو">
+
+    <link rel="apple-touch-icon"
+        href="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://harfeto.timefriend.net/vendor/iconbar/assets/images/favicon.ico">
+
+    <meta property="og:image"
+        content="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
+    <meta name="twitter:image"
+        content="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
+    <meta name="author" content="">
+
+    <link href='https://harfeto.timefriend.net/files/new/css/fontawesome.min.css' rel='stylesheet' type='text/css'>
+
+    <style>
+        tbody {
+            max-width: 100%;
+            display: block;
+
+        }
+
+        .storybutton {
+            border: 0;
+            background: #003375;
+            display: block;
+            padding: .4em 1em;
+            margin: .7em auto;
+            color: white;
+            border-radius: 2em;
+            font-size: 1em;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: .9em;
+            border: 2px solid transparent;
+
+        }
+
+        @media (min-width: 701px) {
+            .story_description {
+                display: none;
+            }
+        }
+
+
+
+
+        div.loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(16, 16, 16, 0.5);
+            z-index: 99;
+            display: none;
+
+        }
+
+
+        @-webkit-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes uil-ring-anim {
+            0% {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .uil-ring-css {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .uil-ring-css>div {
+            position: absolute;
+            display: block;
+            width: 160px;
+            height: 160px;
+            top: 20px;
+            left: 20px;
+            border-radius: 80px;
+            box-shadow: 0 6px 0 0 #ffffff;
+            -ms-animation: uil-ring-anim 1s linear infinite;
+            -moz-animation: uil-ring-anim 1s linear infinite;
+            -webkit-animation: uil-ring-anim 1s linear infinite;
+            -o-animation: uil-ring-anim 1s linear infinite;
+            animation: uil-ring-anim 1s linear infinite;
+        }
+
+        body {
+            margin: 0;
+            font: normal 75% Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-attachment: fixed;
+            text-align: right;
+        }
+
+        .messagesSection {
+            position: absolute;
+            width: 100%;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.153);
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 1.5;
+            border-radius: 10px;
+            font-family: myFont, sans-serif;
+            z-index: 1;
+            box-shadow: rgb(0, 0, 0) 0 0 8px;
+            text-align: center;
+        }
+
+        @font-face {
+            font-family: myFont;
+            src: url('font/Far.Afsoon.ttf');
+        }
+
+        @font-face {
+            font-family: myfont1;
+            src: url('font/SedgwickAveDisplay-Regular.ttf');
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class='uil-ring-css' style='transform:scale(0.79);'>
+            <div></div>
+            <p style="color: #fff;margin-top: 200px;text-align: center;">در حال ساخت استوری</p>
+        </div>
+    </div>
+    <main class="mainContent">
+
+
+        <section class="logInBox regular" style="margin-bottom: 0px;">
+            <div class="loginImage">
+
+
+                <div class="messagesSection">
+                   
+                    <div class="story_description">
+
+                    </div>
+                    <p>
+                        لیست پیام ها
+                    </p>
+
+                    <table class="messages">
+
+                    </table>
+                </div>
+
+
+
+                <div class="linkOfmessages">
+
+
+                </div>
+                <div class="loginForm">
+
+                </div>
+        </section>
+        <div id="pos-footer-sticky-4457"></div>
+        <footer style="max-width: 700px;margin: auto;">
+            <div id="pos-article-display-7509"></div>
+            <br>
+            <br>
+            <br>
+        </footer>
+        <div class="imm" style="width: 450px;position: relative;display: none;">
+            <p
+                style="position: absolute;top: 90px;left: 135px;max-width: 200px;text-align: center;font-size: large;color: crimson;width: 200px;">
+                sohayb</p>
+            <p class="immm"
+                style="position: absolute;top: 180px;left: 60px;max-width: 330px;text-align: right;width: 330px;">متن
+                پیام ارسال شده</p>
+
+        </div>
+        <script>
+            document.addEventListener('click', function (ev) {
+                if (ev.target.id == 'copyText') {
+                    var copyText = document.querySelector('input.url');
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    alert('لینک کپی شد');
+
+                }
+            });
+            function downloadStory(message) {
+                $('.loading').css('display', 'block');
+                var message = message.replace(/(\r\n|\n|\r)/gm, "");
+                $('.imm').css('display', 'block');
+                $('.immm').text(message);
+                domtoimage.toJpeg($('.imm')[0], { quality: 0.95 }).then(function (dataUrl) {
+                    $('.loading').css('display', 'none');
+                    var link = document.createElement('a');
+                    var d = new Date();
+                    var time = d.getTime();
+                    link.download = time + '.jpg';
+                    link.href = dataUrl;
+                    link.click();
+                }).then(function () {
+                    $('.imm').css('display', 'none');
+                });
+            }
+        </script>
+
+    </main>
+
+</body>
+
+</html>
