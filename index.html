@@ -2,273 +2,37 @@
 <html lang="fa">
 
 <head>
-    <script src="https://harfeto.timefriend.net/vendor/jquery.js"></script>
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-    <script src="https://harfeto.timefriend.net/vendor/dom-to-image-master/dist/dom-to-image.min.js"></script>
-
-
-
-
-    <script type="text/javascript">
-        now = new Date();
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.async = true;
-        script.type = 'text/javascript';
-        var script_address = 'https://cdn.yektanet.com/template/bnrs/yn_bnr.min.js';
-        script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
-        head.appendChild(script);
+    <script>
+        !function (e, t, n) { e.yektanetAnalyticsObject = n, e[n] = e[n] || function () { e[n].q.push(arguments) }, e[n].q = e[n].q || []; var a = t.getElementsByTagName("head")[0], r = new Date, c = "" + r.getFullYear().toString() + "0" + r.getMonth() + "0" + r.getDate() + "0" + r.getHours(), s = t.createElement("link"); s.rel = "preload", s.as = "script", s.href = c, a.appendChild(s); var l = t.createElement("script"); l.async = !0, l.src = c, a.appendChild(l) }(window, document, "yektanet");
     </script>
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTHHRC2X2G"></script>-->
-    <!--    <script>-->
-    <!--        window.dataLayer = window.dataLayer || [];-->
-    <!--        function gtag(){dataLayer.push(arguments);}-->
-    <!--        gtag('js', new Date());-->
-    <!---->
-    <!--        gtag('config', 'G-YTHHRC2X2G');-->
-    <!--    </script>-->
-
-    <!--    <script src="https://harfeto.timefriend.net/js/push/main.js"></script>-->
-
-    <div id="pos-notification-7204"></div>
-
-
-
-    <title>چالش حرف ناشناس ( پیام ناشناس ) نمایش پیام</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="حرف های دل دوستات رو به صورت پیام ناشناس بگیر ، ربات حرفتو">
-
-    <link rel="apple-touch-icon"
-        href="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
-    <link rel="shortcut icon" href="https://harfeto.timefriend.net/vendor/iconbar/assets/images/favicon.ico">
-
-    <meta property="og:image"
-        content="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
-    <meta name="twitter:image"
-        content="https://harfeto.timefriend.net/vendor/iconbar/assets/images/apple-touch-icon.png">
-    <meta name="author" content="">
-
-    <link href='https://harfeto.timefriend.net/files/new/css/fontawesome.min.css' rel='stylesheet' type='text/css'>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <style>
-        tbody {
-            max-width: 100%;
-            display: block;
-
+        body {
+            margin: 0;
+            font: normal 75% Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-attachment: fixed;
         }
 
-        .storybutton {
-            border: 0;
-            background: #003375;
-            display: block;
-            padding: .4em 1em;
-            margin: .7em auto;
-            color: white;
-            border-radius: 2em;
-            font-size: 1em;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: .9em;
-            border: 2px solid transparent;
-
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        @media (min-width: 701px) {
-            .story_description {
-                display: none;
-            }
-        }
-
-
-
-
-        div.loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(16, 16, 16, 0.5);
-            z-index: 99;
-            display: none;
-
-        }
-
-
-        @-webkit-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-webkit-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-moz-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-ms-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-moz-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-webkit-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @-o-keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes uil-ring-anim {
-            0% {
-                -ms-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -webkit-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            100% {
-                -ms-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        .uil-ring-css {
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 200px;
-            height: 200px;
-        }
-
-        .uil-ring-css>div {
-            position: absolute;
-            display: block;
-            width: 160px;
-            height: 160px;
-            top: 20px;
-            left: 20px;
-            border-radius: 80px;
-            box-shadow: 0 6px 0 0 #ffffff;
-            -ms-animation: uil-ring-anim 1s linear infinite;
-            -moz-animation: uil-ring-anim 1s linear infinite;
-            -webkit-animation: uil-ring-anim 1s linear infinite;
-            -o-animation: uil-ring-anim 1s linear infinite;
-            animation: uil-ring-anim 1s linear infinite;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         body {
@@ -281,25 +45,15 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-attachment: fixed;
-            text-align: right;
         }
 
-        .messagesSection {
-            position: absolute;
-            width: 100%;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.153);
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 1.5;
-            border-radius: 10px;
-            font-family: myFont, sans-serif;
-            z-index: 1;
-            box-shadow: rgb(0, 0, 0) 0 0 8px;
+        p {
+            position: relative;
             text-align: center;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.259);
+            font-family: myfont, sans-serif;
+            font-size: 36px;
         }
 
         @font-face {
@@ -311,96 +65,166 @@
             font-family: myfont1;
             src: url('font/SedgwickAveDisplay-Regular.ttf');
         }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            direction: rtl;
+        }
+
+        table,
+        td {
+            border: 0px solid black;
+            text-align: center;
+            color: black;
+            font-weight: 300;
+            font-family: myfont, sans-serif;
+            z-index: 1;
+            font-size: 24px;
+        }
+
+        td {
+            padding: 0px;
+
+        }
+
+        canvas {
+            display: block;
+
+
+        }
+
+        /* ---- particles.js container ---- */
+        #particles-js {
+            background-color: #00000000;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        /* ---- stats.js ---- */
+
+
+        .js-count-particles {
+            font-size: 1.1em;
+
+        }
+
+        #stats,
+        .count-particles {
+            user-select: none;
+            margin-top: 5px;
+            margin-left: 5px;
+
+        }
+
+        #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+
+        }
+
+        .count-particles {
+            border-radius: 0 0 3px 3px;
+
+        }
+
+        h1 {
+            position: relative;
+            font-size: 36px;
+            background-color: rgba(0, 0, 0, 0.259);
+
+        }
+
+        b {
+            direction: rtl;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="loading">
-        <div class='uil-ring-css' style='transform:scale(0.79);'>
-            <div></div>
-            <p style="color: #fff;margin-top: 200px;text-align: center;">در حال ساخت استوری</p>
-        </div>
-    </div>
-    <main class="mainContent">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"> <span class="js-count-particles"></span> </div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; "
+        class="container">
 
-        <section class="logInBox regular" style="margin-bottom: 0px;">
-            <div class="loginImage">
-
-
-                <div class="messagesSection">
-                   
-                    <div class="story_description">
-
-                    </div>
+        <table>
+            <tr>
+                <td colspan="3" >
                     <p>
-                        لیست پیام ها
+                        جواب پیام ها
                     </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <h1>
+                        فرد ناشناش
+                    </h1>
+                </td>
+                <td colspan="2" >
+                    <h1>
+                        من
+                    </h1>
+                </td>
+            </tr>
 
-                    <table class="messages">
-
-                    </table>
-                </div>
-
-
-
-                <div class="linkOfmessages">
-
-
-                </div>
-                <div class="loginForm">
-
-                </div>
-        </section>
-        <div id="pos-footer-sticky-4457"></div>
-        <footer style="max-width: 700px;margin: auto;">
-            <div id="pos-article-display-7509"></div>
-            <br>
-            <br>
-            <br>
-        </footer>
-        <div class="imm" style="width: 450px;position: relative;display: none;">
-            <p
-                style="position: absolute;top: 90px;left: 135px;max-width: 200px;text-align: center;font-size: large;color: crimson;width: 200px;">
-                sohayb</p>
-            <p class="immm"
-                style="position: absolute;top: 180px;left: 60px;max-width: 330px;text-align: right;width: 330px;">متن
-                پیام ارسال شده</p>
-
-        </div>
-        <script>
-            document.addEventListener('click', function (ev) {
-                if (ev.target.id == 'copyText') {
-                    var copyText = document.querySelector('input.url');
-                    copyText.select();
-                    copyText.setSelectionRange(0, 99999);
-                    document.execCommand("copy");
-                    alert('لینک کپی شد');
-
-                }
-            });
-            function downloadStory(message) {
-                $('.loading').css('display', 'block');
-                var message = message.replace(/(\r\n|\n|\r)/gm, "");
-                $('.imm').css('display', 'block');
-                $('.immm').text(message);
-                domtoimage.toJpeg($('.imm')[0], { quality: 0.95 }).then(function (dataUrl) {
-                    $('.loading').css('display', 'none');
-                    var link = document.createElement('a');
-                    var d = new Date();
-                    var time = d.getTime();
-                    link.download = time + '.jpg';
-                    link.href = dataUrl;
-                    link.click();
-                }).then(function () {
-                    $('.imm').css('display', 'none');
-                });
-            }
-        </script>
-
-    </main>
-
+            <tr>
+                <td colspan="2" >
+                    <b>
+                        کراشمی😐😂
+                    </b>
+                </td>
+                <td colspan="2" >
+                    <b>
+                        ایرو شتی اوا نلی
+                    </b>
+                </td>
+            <tr>
+                <td colspan="2" >
+                    <b>
+                        ناراحت مبه
+                    </b>
+                </td>
+                <td colspan="2" >
+                    <b>
+                        نیم
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>
+                        شه وت خوش سهیم  
+                    </b>
+                </td>
+                <td colspan="2">
+                    <b>
+                        اصل
+                    </b>
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </div>
+    <script>particlesJS("particles-js", { "particles": { "number": { "value": 60, "density": { "enable": true, "value_area": 631.3181133058181 } }, "color": { "value": "#ff0000" }, "shape": { "type": "edge", "stroke": { "width": 1, "color": "	#ff0000" }, "polygon": { "nb_sides": 3 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.49716301422833176, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 5.7, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 160.3412060865523, "color": "#000", "opacity": 0.4008530152163807, "width": 1 }, "move": { "enable": true, "speed": 3, "direction": "none", "random": true, "straight": false, "out_mode": "bounce", "bounce": false, "attract": { "enable": true, "rotateX": 1763.753266952075, "rotateY": 1603.4120608655228 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 0.156297557645007 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 0.09744926547616141, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
 </body>
 
 </html>
