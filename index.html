@@ -77,7 +77,7 @@
         table,
         td {
             border: 0px solid black;
-            text-align: center;
+          
             color: black;
             font-weight: 300;
             z-index: 1;
@@ -146,9 +146,24 @@
         b {
             direction: rtl;
         }
-        td{
+
+        td {
             background-color: rgba(199, 159, 236, 0.289);
         }
+
+        .im {
+            position: fixed;
+           top: 100px;
+            text-align: left;
+           
+        }
+
+        .you {
+            text-align: right;
+            top: 100px;
+            position: fixed;
+        }
+        
     </style>
 
 </head>
@@ -165,46 +180,62 @@
 
     <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; "
         class="container">
-
-        <table>
+        <p>
+            جواب پیام ها
+        </p>
+        </td>
+        <table class="you">
             <tr>
-                <td colspan="3" >
-                    <p>
-                        جواب پیام ها
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" >
-                    <p>
+                <td colspan="2">
+                    <p style="text-align: right;">
                         فرد ناشناش
                     </p>
                 </td>
-                <td colspan="2" >
-                    <p>
-                        من
-                    </p>
-                </td>
             </tr>
 
             <tr>
-                <td colspan="2" >
+                <td colspan="2">
                     <b>
                         کراشمی😐😂
                     </b>
                 </td>
-                <td colspan="2" >
-                    <b>
-                        ایرو شتی اوا نلی
-                    </b>
-                </td>
+
             <tr>
-                <td colspan="2" >
+                <td colspan="2">
                     <b>
                         ناراحت مبه
                     </b>
                 </td>
-                <td colspan="2" >
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>
+                        شه وت خوش سهیم
+                    </b>
+                </td>
+
+            </tr>
+            </tr>
+        </table>
+        <!-- جوای های من-->
+        <table class="im">
+            <tr>
+                <td colspan="2">
+                    <p style="text-align: left;">
+                        من
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>
+                        ایرو شتی اوا نلی
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
                     <b>
                         نیم
                     </b>
@@ -213,15 +244,9 @@
             <tr>
                 <td colspan="2">
                     <b>
-                        شه وت خوش سهیم  
-                    </b>
-                </td>
-                <td colspan="2">
-                    <b>
                         اصل
                     </b>
                 </td>
-            </tr>
             </tr>
         </table>
     </div>
